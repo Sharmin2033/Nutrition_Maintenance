@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.hp.nutrition_maintenance.Breakfast">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Click (+) and (-) button for the quantity of food"
+                    android:textSize="30dp"
+                    android:background="@color/co"
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:orientation="horizontal"
+                android:paddingTop="30dp"
+                >
+                <CheckBox
+                    android:id="@+id/ruti"
+                    android:text="Bread"
+                    android:textSize="40dp"
+                    android:layout_weight="1"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/ck1"
+                    />
+                <Button
+                    android:id="@+id/plusbutton"
+                    android:layout_width="35dp"
+                    android:layout_height="100dp"
+                    android:text="+"
+                    android:layout_weight="1"
+                    android:textSize="50sp"
+                    android:onClick="add"
+                    android:background="@drawable/buttonbackground"
+                    android:layout_marginLeft="20dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+
+                    />
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="100dp"
+                    android:text="0"
+                    android:layout_weight="1"
+                    android:background="@color/cn"
+                    android:textSize="40dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/countstart"
+                    android:onClick="count2"
+                    />
+
+                <Button
+                    android:id="@+id/minasbutton"
+                    android:layout_width="35dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/buttonbackgoundd"
+                    android:layout_weight="1"
+                    android:text="-"
+                    android:textSize="50sp"
+                    android:textStyle="bold"
+                    android:onClick="sub"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    />
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="100dp"
+                    android:text="piece"
+                    android:layout_weight="1"
+                    android:background="@color/cn"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:orientation="horizontal"
+                android:paddingTop="30dp"
+                >
+                <CheckBox
+                    android:id="@+id/veg"
+                    android:text="Vegetable"
+                    android:textSize="30dp"
+                    android:layout_weight="1"
+                    android:layout_width="170dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/ck1"
+                    />
+                <Button
+                    android:id="@+id/plusbuttonveg"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:text="+"
+                    android:layout_weight="1"
+                    android:textSize="50sp"
+                    android:onClick="addveg"
+                    android:background="@drawable/buttonbackground"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+
+                    />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+
+                    android:text="0"
+                    android:layout_weight="1"
+                    android:background="@color/cn"
+                    android:textSize="40dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/countstartveg"
+                    />
+                <Button
+                    android:id="@+id/minasbuttonveg"
+                    android:layout_width="30dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/buttonbackgoundd"
+                    android:layout_weight="1"
+                    android:text="-"
+                    android:textSize="50sp"
+                    android:textStyle="bold"
+                    android:onClick="subveg"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="100dp"
+                    android:text="bowl"
+                    android:layout_weight="1"
+                    android:background="@color/cn"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:orientation="horizontal"
+                android:paddingTop="30dp"
+                >
+                <CheckBox
+                    android:id="@+id/milk"
+                    android:text="Egg"
+                    android:textSize="30sp"
+                    android:layout_weight="1"
+                    android:layout_width="170dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/ck1"
+                    />
+                <Button
+                    android:id="@+id/plusbuttonmilk"
+                    android:layout_width="40dp"
+                    android:layout_height="100dp"
+                    android:text="+"
+                    android:layout_weight="1"
+                    android:textSize="50sp"
+                    android:onClick="addmilk"
+                    android:background="@drawable/buttonbackground"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+
+                    />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="100dp"
+
+                    android:text="0"
+                    android:layout_weight="1"
+                    android:background="@color/cn"
+                    android:textSize="40dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/countstartmilk"
+                    />
+                <Button
+                    android:id="@+id/minasbuttonmilk"
+                    android:layout_width="40dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/buttonbackgoundd"
+                    android:layout_weight="1"
+                    android:text="-"
+                    android:textSize="50sp"
+                    android:textStyle="bold"
+                    android:onClick="submilk"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="100dp"
+                    android:text="piece"
+                    android:layout_weight="1"
+                    android:background="@color/cn"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+
+                <Button
+
+                    android:onClick="order"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:text="show calories"
+                    android:textSize="30dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/bg"
+                    android:layout_marginBottom="10dp"
+
+
+                    />
+                <TextView
+                    android:id="@+id/showcalories"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:text="calories"
+                    android:textSize="30dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/od"
+
+
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

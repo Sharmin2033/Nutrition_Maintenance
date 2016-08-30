@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#ff9b49</color>
+    <color name="rd">#DEB887</color>
+    <color name="co">#DEB887</color>
+    <color name="cl">#CD7F32</color>
+    <color name="ad">#8DB600</color>
+    <color name="ck1">#CD7F32</color>
+    <color name="ck2">#CD7F32</color>
+    <color name="cn">#CD7F32</color>
+    <color name="mn"> #E52B50</color>
+    <color name="od">#CD7F32</color>
+    <color name="bt">#CD7F32</color>
+    <color name="bg">#B3fff3</color>
+</resources>
